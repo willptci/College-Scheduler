@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ClassAdd">
+
+
+    <TextView
+        android:id="@+id/popupClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Class"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/popupEditClass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/popupEditClass"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Intro to Computing"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/popupClassNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/popupEditClassNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupClass" />
+
+    <TextView
+        android:id="@+id/popupClassInstructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Instructor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/popupEditStartTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupClassNumber" />
+
+    <EditText
+        android:id="@+id/popupEditClassNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="CS 1301"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditClass" />
+
+    <EditText
+        android:id="@+id/popupEditClassInstructor"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Your Instructor"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditClassNumber" />
+
+    <EditText
+        android:id="@+id/popupEditStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="11:30"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditClassInstructor" />
+
+    <EditText
+        android:id="@+id/editClassEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="12:30"
+        android:inputType="time"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditStartTime" />
+
+    <TextView
+        android:id="@+id/popupAssignmentClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Start Time"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/popupEditStartTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupClassInstructor" />
+
+    <Button
+        android:id="@+id/ClassEditDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editClassDay" />
+
+    <TextView
+        android:id="@+id/popupClassEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="End Time"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/editClassEndTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupAssignmentClass" />
+
+    <TextView
+        android:id="@+id/popupClassDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Day"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/editClassDay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupClassEndTime" />
+
+    <EditText
+        android:id="@+id/editClassDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Choose 1: M,T,W,TH,F"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editClassEndTime" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

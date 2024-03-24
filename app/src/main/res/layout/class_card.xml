@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/className"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Computer Science"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classNumber"
+        android:layout_below="@+id/className"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="2340"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classInstructor"
+        android:layout_below="@+id/classNumber"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Sum Ting Wong"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classStart"
+        android:layout_below="@+id/classInstructor"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="11:00"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classEnd"
+        android:layout_below="@+id/classStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="12:00"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/classEnd"
+        android:layout_marginTop="10dp"
+        android:background="#223140" />
+
+</RelativeLayout>

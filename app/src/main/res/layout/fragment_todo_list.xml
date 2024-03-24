@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/itemText"
+        android:layout_width="253dp"
+        android:layout_height="32dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="248dp"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/editIcon"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/itemText">
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/courseText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/editIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo_edit_icon"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintStart_toEndOf="@+id/itemText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/deleteIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="start"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo_delete_icon"
+        android:src="@android:drawable/ic_menu_delete"
+        app:layout_constraintStart_toEndOf="@+id/editIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

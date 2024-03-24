@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">College Scheduler</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="home">Home</string>
+    <string name="class_details">Class Details</string>
+    <string name="assignments">Assignments</string>
+    <string name="exams">Exams</string>
+    <string name="to_do_list">To-do List</string>
+
+    <string name="lorem_ipsum">
+        wow
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo_enter_text">Enter text</string>
+    <string name="todo_add_button">Add</string>
+    <string name="todo_delete_icon">Delete Icon</string>
+    <string name="todo_edit_icon">Edit Icon</string>
+    <string name="todo_date_text">Enter date (mm/dd/yyyy)</string>
+    <string name="todo_course_text">Enter course</string>
+    <string name="exam_name_text">Exam Name</string>
+    <string name="exam_date_Text">Date (mm/dd/yyyy)</string>
+    <string name="exam_time_text">Time (xx:xx am/pm)</string>
+    <string name="exam_location_text">Location</string>
+    <string name="exam_course_text">Course</string>
+    <string name="exam_add_text">Add Exam</string>
+</resources>

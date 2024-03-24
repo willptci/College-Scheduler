@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AssignmentPopUp">
+
+
+    <TextView
+        android:id="@+id/popupAssignmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Title"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/popupEditAssignmentTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/popupEditAssignmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Project 1"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/popupAssignmentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Date"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/popupEditAssignmentDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupAssignmentTitle" />
+
+    <TextView
+        android:id="@+id/popupAssignmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Time"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/popupEditAssignmentTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupAssignmentDate" />
+
+    <EditText
+        android:id="@+id/popupEditAssignmentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="01/01/2024"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditAssignmentTitle" />
+
+    <EditText
+        android:id="@+id/popupEditAssignmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="15:30"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditAssignmentDate" />
+
+    <EditText
+        android:id="@+id/popupEditAssignmentclass"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="CS 2340"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditAssignmentTime" />
+
+    <TextView
+        android:id="@+id/popupAssignmentClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Class"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/popupEditAssignmentclass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupAssignmentTime" />
+
+    <Button
+        android:id="@+id/assignmentEditDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="20dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popupEditAssignmentclass"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
